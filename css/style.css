@@ -177,6 +177,63 @@ body {
   display: none;
 }
 
+.step-img-tablet {
+  display: none;
+}
+
+.arrow-img-phone {
+  display: none;
+}
+
+.process__container {
+  margin-top: 96px;
+  height: 343px;
+}
+
+.process__title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 600;
+  color: #333333;
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.process__steps {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1100px;
+  margin: 0 auto;
+  justify-content: space-between;
+  gap: 48px;
+}
+
+.step__container {
+  padding-left: 36px;
+  display: block;
+}
+
+.step__title {
+  width: 386px;
+  padding-top: 6px;
+  padding-bottom: 16px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #333333;
+}
+
+.step__text {
+  width: 390px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.step {
+  display: flex;
+}
+
 @media (max-width: 768px) {
   .header__container {
     height: 50px;
@@ -265,6 +322,40 @@ body {
     padding-left: 25px;
     order: 5;
   }
+
+  .process__container {
+    margin-top: 101px;
+    height: 812px;
+  }
+
+  .process__steps {
+    width: 600px;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .step__title {
+    width: 460px;
+    padding-top: 12px;
+    padding-bottom: 17px;
+    font-size: 24px;
+  }
+
+  .step__text {
+    width: 425px;
+  }
+
+  .step-img-desktop {
+    display: none;
+  }
+
+  .step-img-tablet {
+    display: block;
+  }
+
+  .arrow-img-phone {
+    display: none;
+  }
 }
 
 @media (max-width: 320px) {
@@ -328,5 +419,52 @@ body {
 
   .banner__advantages {
     display: none;
+  }
+
+  .process__container {
+    margin-top: 65px;
+    height: 460px;
+  }
+
+  .process__title {
+    width: 230px;
+    font-size: 20px;
+    margin: 0 auto;
+    padding-bottom: 28px;
+  }
+
+  .process__steps {
+    width: 280px;
+    justify-content: space-between;
+  }
+
+  .step__container {
+    padding-left: 0px;
+    display: flex;
+    align-items: center;
+  }
+
+  .step__title {
+    padding-top: 4px;
+    padding-left: 12px;
+    padding-right: 1px;
+    width: 188px;
+    font-size: 16px;
+  }
+
+  .step__text {
+    display: none;
+  }
+
+  .step-img-tablet {
+    display: none;
+  }
+
+  .step-img-desktop {
+    display: block;
+  }
+
+  .arrow-img-phone {
+    display: block;
   }
 }
