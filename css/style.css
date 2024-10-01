@@ -500,6 +500,272 @@ body {
   display: none;
 }
 
+.feedback-form-container{
+  width: 727px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-bottom: 104px;
+}
+
+.contacts__container{
+  padding-left: 11px;
+  padding-right: 44px;
+}
+
+.feedback-form-title{
+  padding-bottom: 10px;
+  padding-top: 124px;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 36px;
+  color: #333333;
+}
+
+.contacts-form-text{
+  padding-bottom: 48px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #333333;
+}
+
+.inp__contacts{
+  padding-bottom: 64px;
+  display: flex;
+  gap: 70px;
+}
+
+.contact-inp{
+  display: block;
+  width: 300px;
+  height: 34px;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #333333;
+  color: #333333;
+}
+
+.select-city-container{
+  display: flex;
+  gap: 70px;
+  padding-bottom: 62px;
+}
+
+.label-title{
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #333333;
+}
+
+.select-inp{
+  display: block;
+  width: 300px;
+  height: 34px;
+  font-family: inherit;
+  font-size: 16px;
+  margin-top: 34px;
+  border-bottom: 1px solid #333333;
+  padding-bottom: 14px;
+  color: #333333;
+}
+
+.pay-method-radio-btn{
+  padding-top: 32px;
+  padding-bottom: 64px;
+  display: flex;
+  width: 680px;
+  justify-content: space-between;
+}
+
+.radio-inp{
+  display: none;
+}
+
+.radio-btn-text{
+  display: flex;
+  height: 26px;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  padding-left: 40px;
+  user-select: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #333333;
+}
+
+.radio-btn-text::before{
+  left: 0;
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border-radius: 100%;
+  border: 2px solid #33333366;
+  background-color: #F8F8F8;
+}
+
+.radio-inp:checked + .radio-btn-text::before{
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  border: 2px solid #fed100;
+  background: url('/img/feedback-form/icons/radio-btn-selected.svg') 0 0 no-repeat;
+  background-position: center;
+}
+
+.additional-services-title{
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #333333;
+  padding-bottom: 34px;
+}
+
+.additional-services-checkBox{
+  display: flex;
+  gap: 40px;
+  padding-bottom: 33px;
+}
+
+.additional-inp{
+  display: none;
+}
+
+.add-checkbox{
+  display: flex;
+  white-space: nowrap;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  padding-left: 36px;
+  user-select: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #333333;
+}
+
+.add-checkbox::before{
+  left: 0;
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border-radius: 2px;
+  border: 2px solid #33333366;
+  background-color: #F8F8F8;
+}
+
+.additional-inp:checked + .add-checkbox::before{
+  width: 20px;
+  height: 20px;
+  border: 2px solid #fed100;
+  border-radius: 2px;
+  background: url('/img/feedback-form/icons/checked.svg') 0 0 no-repeat;
+  background-position: center;
+}
+
+.order__wrapper{
+  padding-top: 20px;
+  display: flex;
+}
+
+.order-discount-time{
+  font-size: 96px;
+  font-weight: 400;
+  line-height: 126px;
+  color: #333333;
+}
+
+.order__container{
+  padding-top: 20px;
+  padding-left: 66px;
+}
+
+.feedback-form-order {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 22px;
+}
+
+.form-border {
+  top: 10px;
+  left: 10px;
+  position: absolute;
+  width: 250px;
+  height: 50px;
+  border: 2px solid #fed100;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.form-btn {
+  width: 250px;
+  height: 50px;
+  font-family: inherit;
+  text-align: center;
+  align-items: center;
+  position: relative;
+  display: inline-block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  color: #f2f2f2;
+  background-color: #ff352b;
+  z-index: 2;
+}
+
+.form-btn::before{
+  content: 'Заказать со скидкой';
+}
+
+.personal-data{
+  display: none;
+}
+
+.personal-data-label{
+  display: flex;
+  white-space: nowrap;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  padding-left: 25px;
+  user-select: none;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  color: #333333;
+}
+
+.personal-data-label::before{
+  left: 0;
+  content: "";
+  display: inline-block;
+  width: 11.8px;
+  height: 11.8px;
+  position: absolute;
+  border-radius: 2px;
+  border: 2px solid #33333366;
+}
+
+.personal-data:checked + .personal-data-label::before{
+  width: 16px;
+  height: 16px;
+  border: none;
+  background: url('/img/feedback-form/icons/personal-data-checked.svg') 0 0 no-repeat;
+} 
+
+
 @media (max-width: 1024px) {
   .header__container {
     height: 50px;
@@ -824,6 +1090,81 @@ body {
     display: block;
     margin: 0 auto;
   }
+
+  .order-discount-time,
+  .feedback-form-title-desktop{
+    display: none;
+  }
+
+  .feedback-form-container{
+    width: 768px;
+    padding-bottom: 74px;
+  }
+
+  .contacts__container{
+    padding-left: 55px;
+    padding-right: 48px;
+  }
+
+  .feedback-form-title{
+    padding-top: 75px;
+    padding-bottom: 4px;
+    width: 394px;
+    line-height: 48px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .contacts-form-text{
+    padding-bottom: 68px;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .inp__contacts{
+    padding-bottom: 48px;
+  }
+
+  .label-title{
+    font-size: 20px;
+    line-height: 31px;
+  }
+
+  .select-inp{
+    margin-top: 12px;
+  }
+
+  .pay-method-radio-btn{
+    padding-bottom: 52px;
+  }
+
+  .order__container{
+    padding-left: 0px;
+    margin: 0 auto;
+  }
+
+  .form-border{
+    width: 295px;
+    height: 57px;
+  }
+
+  .form-btn{
+    width: 295px;
+    height: 57px;
+    font-size: 20px;
+    line-height: 21px;
+  }
+  
+  .personal-checkBox{
+    padding-left: 12px;
+  }
+
+  .personal-data-label{
+    font-size: 16px;
+    line-height: 19px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1089,5 +1430,82 @@ body {
   .all-review-btn {
     width: 292px;
     height: 60px;
+  }
+
+  .select-city-container,
+  .pay__method,
+  .additional__services,
+  .form-border{
+    display: none;
+  }
+
+  .feedback-form-container{
+    width: 302px;
+    padding-bottom: 43px;
+  }
+
+  .contacts__container{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .feedback-form-title{
+    padding-top: 38px;
+    padding-bottom: 8px;
+    width: 222px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .contacts-form-text{
+    padding-bottom: 43px;
+    width: 307px;
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .inp__contacts{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding-bottom: 60px;
+  }
+
+  .order__wrapper{
+    padding-top: 0px;
+  }
+
+  .order__container{
+    width: 290px;
+    padding-top: 0px;
+    padding-left: 0px;
+  }
+
+  .form-btn{
+    padding-top: 0px;
+  }
+
+  .form-btn{
+    padding-bottom: 17px;
+    width: 289px;
+    height: 65px;
+    font-weight: 500;
+    padding-top: 15px;
+    padding-bottom: 19px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .form-btn::before{
+    content: 'Перезвонить мне';
+  }
+
+  .personal-checkBox{
+    padding-left: 18px;
+  }
+
+  .personal-data-label{
+    font-size: 12px;
+    line-height: 14px;
   }
 }

@@ -458,9 +458,198 @@
             </div>
           </div>
         </section>
+
+        <section class="feedback__form">
+          <div class="feedback-form-container">
+            <h2 class="feedback-form-title">
+              Закажи переезд прямо сейчас<span
+                class="feedback-form-title-desktop"
+              >
+                со скидкой %</span
+              >
+            </h2>
+
+            <form method="post" action="/submit-form">
+              <div class="contacts__container">
+                <h2 class="contacts-form-text">
+                  Мы перезвоним в течении 10 секунд
+                </h2>
+
+                <div class="inp__contacts">
+                  <input
+                    class="contact-inp"
+                    type="text"
+                    placeholder="Ваше имя"
+                  />
+                  <input
+                    class="contact-inp"
+                    type="text"
+                    placeholder="Телефон"
+                  />
+                </div>
+
+                <div class="select-city-container">
+                  <div class="select-region">
+                    <label class="label-title" for="region"
+                      >Укажите область</label
+                    >
+                    <select
+                      class="select-inp"
+                      id="region"
+                      onchange="selectCityByRegion()"
+                    >
+                      <option value="" disabled selected>
+                        Например: Минская
+                      </option>
+                      <option value="minsk">Минская</option>
+                      <option value="gomel">Гомельская</option>
+                      <option value="brest">Брестская</option>
+                      <option value="vitebsk">Витебская</option>
+                      <option value="mogilev">Могилевская</option>
+                      <option value="grodno">Гродненская</option>
+                    </select>
+                  </div>
+
+                  <div class="select-city">
+                    <label class="label-title" for="city">Укажите город</label>
+                    <select class="select-inp" id="city">
+                      <option value="" disabled selected>
+                        Например: Слуцк
+                      </option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="pay__method">
+                  <h2 class="label-title">Способ оплаты</h2>
+                  <div class="pay-method-radio-btn">
+                    <div class="radio-btn">
+                      <input
+                        class="radio-inp"
+                        type="radio"
+                        name="pay-method"
+                        id="cash"
+                      />
+                      <label class="radio-btn-text" for="cash"
+                        >Наличные курьеру</label
+                      >
+                    </div>
+
+                    <div class="radio-btn">
+                      <input
+                        class="radio-inp"
+                        type="radio"
+                        name="pay-method"
+                        id="card"
+                      />
+                      <label class="radio-btn-text" for="card"
+                        >Картой курьеру</label
+                      >
+                    </div>
+
+                    <div class="radio-btn">
+                      <input
+                        class="radio-inp"
+                        type="radio"
+                        name="pay-method"
+                        id="card-transfer"
+                      />
+                      <label class="radio-btn-text" for="card-transfer"
+                        >Банковский перевод</label
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="additional__services">
+                  <div class="additional-services-title">
+                    Дополнительные услуги
+                    <img
+                      src="img/feedback-form/icons/add-vector-down.svg"
+                      alt="Стрелка вниз доп услуги"
+                    />
+                  </div>
+
+                  <div class="additional-services-checkBox">
+                    <input
+                      class="additional-inp"
+                      type="checkbox"
+                      id="call-a-measurer"
+                      name="call-a-measurer"
+                    />
+                    <label class="add-checkbox" for="call-a-measurer"
+                      >Вызвать замерщика</label
+                    >
+
+                    <input
+                      class="additional-inp"
+                      type="checkbox"
+                      id="pack-fraigle"
+                      name="pack-fraigle"
+                    />
+                    <label class="add-checkbox" for="pack-fraigle"
+                      >Упаковка для хрупких предметов</label
+                    >
+
+                    <input
+                      class="additional-inp"
+                      type="checkbox"
+                      id="crane"
+                      name="crane"
+                    />
+                    <label class="add-checkbox" for="crane">Кран</label>
+                  </div>
+
+                  <div class="additional-services-checkBox">
+                    <input
+                      class="additional-inp"
+                      type="checkbox"
+                      id="assembly-furniture"
+                      name="assembly-furniture"
+                    />
+                    <label class="add-checkbox" for="assembly-furniture"
+                      >Сборка мебели</label
+                    >
+
+                    <input
+                      class="additional-inp"
+                      type="checkbox"
+                      id="large-items"
+                      name="large-items"
+                    />
+                    <label class="add-checkbox" for="large-items"
+                      >Крупногабаритные предметы</label
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="order__wrapper">
+                <div class="order-discount-time">05:37:25</div>
+                <div class="order__container">
+                  <div class="feedback-form-order">
+                    <div class="form-border"></div>
+                    <button type="submit" class="form-btn"></button>
+                  </div>
+                  <div class="personal-checkBox">
+                    <input
+                      class="personal-data"
+                      type="checkbox"
+                      id="personal-data"
+                      name="personal-data"
+                    />
+                    <label class="personal-data-label" for="personal-data"
+                      >Даю согласие на обработку данных</label
+                    >
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
       </main>
       <footer class="footer"></footer>
     </div>
-    <script src="js/script.js"></script>
+    <script src="js/selectCityByRegion.js"></script>
   </body>
 </html>
