@@ -21,16 +21,16 @@
           <nav class="header__menu menu">
             <ul class="menu__list">
               <li class="menu__item">
-                <a href="#" class="menu__link">Цены</a>
+                <a href="#prices" class="menu__link">Цены</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link">Автопарк</a>
+                <a href="#autopark" class="menu__link">Автопарк</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link">Отзывы</a>
+                <a href="#feedback" class="menu__link">Отзывы</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link">Контакты</a>
+                <a href="#contacts" class="menu__link">Контакты</a>
               </li>
             </ul>
           </nav>
@@ -203,7 +203,7 @@
           </div>
         </section>
 
-        <section class="prices">
+        <section id="prices" class="prices">
           <div class="prices__container">
             <h2 class="prices__title">Цены</h2>
             <p class="prices__text">
@@ -264,7 +264,7 @@
           </div>
         </section>
 
-        <section class="autopark">
+        <section id="autopark" class="autopark">
           <div class="autopark__container">
             <h2 class="autopark__title">Автопарк</h2>
             <p class="autopark__text">
@@ -315,9 +315,15 @@
 
                   <div class="slider-dots">
                     <picture>
-                      <source srcset="img/autopark/icon/slider-dots-tablet.svg" media="(max-width: 1024px)">
-                      <source srcset="img/autopark/icon/slider-dots-phone.svg" media="(max-width: 767px)">
-                      <img src="" alt="">
+                      <source
+                        srcset="img/autopark/icon/slider-dots-tablet.svg"
+                        media="(max-width: 1024px)"
+                      />
+                      <source
+                        srcset="img/autopark/icon/slider-dots-phone.svg"
+                        media="(max-width: 767px)"
+                      />
+                      <img src="" alt="" />
                     </picture>
                   </div>
                 </div>
@@ -329,8 +335,14 @@
 
               <div class="slider-main-img">
                 <picture>
-                  <source srcset="img/autopark/cars/gazel-desktop.png" media="(min-width: 1024px)">
-                  <source srcset="img/autopark/cars/gazel-tablet.png" media="(min-width: 768px)">
+                  <source
+                    srcset="img/autopark/cars/gazel-desktop.png"
+                    media="(min-width: 1024px)"
+                  />
+                  <source
+                    srcset="img/autopark/cars/gazel-tablet.png"
+                    media="(min-width: 768px)"
+                  />
                   <img
                     class="slider-main-img-phone"
                     src="img/autopark/cars/gazel-phone.png"
@@ -349,7 +361,7 @@
           </div>
         </section>
 
-        <section class="feedback">
+        <section id="feedback" class="feedback">
           <div class="feedback__container">
             <h2 class="feedback__title">Отзывы</h2>
 
@@ -428,7 +440,7 @@
           </div>
         </section>
 
-        <section class="feedback__form">
+        <section id="contacts" class="feedback__form">
           <div class="feedback-form-container">
             <h2 class="feedback-form-title">
               Закажи переезд прямо сейчас<span
@@ -627,9 +639,82 @@
           </div>
         </section>
       </main>
-      <footer class="footer"></footer>
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="logo-and-policy">
+            <a href="#" class="footer__logo">MOVING</a>
+            <p class="policy-agreement">Политика конфиденциальнности</p>
+            <p class="personal-inf">
+              Соглашение на обработку персональных данных
+            </p>
+          </div>
+
+          <div class="footer__nav">
+            <nav class="footer__menu">
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Главная</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#prices" class="footer__link">Цены</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#autopark" class="footer__link">Автопарк</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#feedback" class="footer__link">Отзывы</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#contacts" class="footer__link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="footer__contacts">
+            <div class="footer__btn">
+              <button class="callback__btn">Обратный звонок</button>
+            </div>
+
+            <div class="footer__num">
+              <p class="phone-num">8 (029)-999-12-13</p>
+              <div class="phone-underline"></div>
+            </div>
+
+            <div class="social">
+              <a href="#"
+                ><img
+                  class="social-img"
+                  src="/img/footer/icons/youtube-icon.svg"
+                  alt="ютуб"
+              /></a>
+              <a href="#"
+                ><img
+                  class="social-img"
+                  src="/img/footer/icons/vk-icon.svg"
+                  alt="вк"
+              /></a>
+              <a href="#"
+                ><img
+                  class="social-img"
+                  src="/img/footer/icons/facebook-icon.svg"
+                  alt="фейсбук"
+              /></a>
+              <a href="#"
+                ><img
+                  class="social-img"
+                  src="/img/footer/icons/insta-icon.svg"
+                  alt="инстаграм"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"type="text/javascript"></script>
+    <script
+      src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"
+      type="text/javascript"
+    ></script>
     <script src="/js/yamap.js"></script>
     <script src="js/selectCityByRegion.js"></script>
   </body>
