@@ -684,6 +684,7 @@ body {
 }
 
 .order-discount-time {
+  width: 376px;
   font-size: 96px;
   font-weight: 400;
   line-height: 126px;
