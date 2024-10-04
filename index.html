@@ -18,21 +18,41 @@
       <header class="header">
         <div class="header__container">
           <a href="#" class="header__logo">MOVING</a>
-          <nav class="header__menu menu">
+          <nav class="header__menu">
+            <div class="arrow-menu">
+              <picture>
+                <source
+                  srcset="img/banner/right-arrow.svg"
+                  media="(max-width: 1024px)"
+                />
+                <img class="arrow-menu-img" src="" alt="" />
+              </picture>
+            </div>
             <ul class="menu__list">
               <li class="menu__item">
-                <a href="#prices" class="menu__link">Цены</a>
+                <a href="#" class="menu__link">Главная</a>
               </li>
               <li class="menu__item">
-                <a href="#autopark" class="menu__link">Автопарк</a>
+                <a data-goto=".prices" href="#" class="menu__link">Цены</a>
               </li>
               <li class="menu__item">
-                <a href="#feedback" class="menu__link">Отзывы</a>
+                <a data-goto=".autopark" href="#" class="menu__link"
+                  >Автопарк</a
+                >
               </li>
               <li class="menu__item">
-                <a href="#contacts" class="menu__link">Контакты</a>
+                <a data-goto=".feedback" href="#" class="menu__link">Отзывы</a>
+              </li>
+              <li class="menu__item">
+                <a data-goto=".order__form" href="#" class="menu__link"
+                  >Контакты</a
+                >
               </li>
             </ul>
+            <div class="header__phone-menu">
+              <p class="phone__num">8(029)-999-12-13</p>
+              <div class="phone-menu-underline"></div>
+            </div>
           </nav>
           <div class="header__phone">
             <p class="phone__num">8(029)-999-12-13</p>
@@ -203,7 +223,7 @@
           </div>
         </section>
 
-        <section id="prices" class="prices">
+        <section class="prices">
           <div class="prices__container">
             <h2 class="prices__title">Цены</h2>
             <p class="prices__text">
@@ -264,7 +284,7 @@
           </div>
         </section>
 
-        <section id="autopark" class="autopark">
+        <section class="autopark">
           <div class="autopark__container">
             <h2 class="autopark__title">Автопарк</h2>
             <p class="autopark__text">
@@ -361,7 +381,7 @@
           </div>
         </section>
 
-        <section id="feedback" class="feedback">
+        <section class="feedback">
           <div class="feedback__container">
             <h2 class="feedback__title">Отзывы</h2>
 
@@ -440,7 +460,7 @@
           </div>
         </section>
 
-        <section id="contacts" class="feedback__form">
+        <section class="order__form">
           <div class="feedback-form-container">
             <h2 class="feedback-form-title">
               Закажи переезд прямо сейчас<span
@@ -543,7 +563,10 @@
                 </div>
 
                 <div class="additional__services">
-                  <h3 id="additional-serv-title" class="additional-services-title">
+                  <h3
+                    id="additional-serv-title"
+                    class="additional-services-title"
+                  >
                     Дополнительные услуги
                     <img
                       id="add-arrow"
@@ -552,7 +575,10 @@
                     />
                   </h3>
 
-                  <div id="additional-serv-checkbox" class="additional-services-checkBox">
+                  <div
+                    id="additional-serv-checkbox"
+                    class="additional-services-checkBox"
+                  >
                     <input
                       class="additional-inp"
                       type="checkbox"
@@ -582,7 +608,10 @@
                     <label class="add-checkbox" for="crane">Кран</label>
                   </div>
 
-                  <div id="additional-serv-checkbox" class="additional-services-checkBox">
+                  <div
+                    id="additional-serv-checkbox"
+                    class="additional-services-checkBox"
+                  >
                     <input
                       class="additional-inp"
                       type="checkbox"
@@ -657,16 +686,22 @@
                   <a href="#" class="footer__link">Главная</a>
                 </li>
                 <li class="footer__item">
-                  <a href="#prices" class="footer__link">Цены</a>
+                  <a data-goto=".prices" href="#" class="footer__link">Цены</a>
                 </li>
                 <li class="footer__item">
-                  <a href="#autopark" class="footer__link">Автопарк</a>
+                  <a data-goto=".autopark" href="#" class="footer__link"
+                    >Автопарк</a
+                  >
                 </li>
                 <li class="footer__item">
-                  <a href="#feedback" class="footer__link">Отзывы</a>
+                  <a data-goto=".feedback" href="#" class="footer__link"
+                    >Отзывы</a
+                  >
                 </li>
                 <li class="footer__item">
-                  <a href="#contacts" class="footer__link">Контакты</a>
+                  <a data-goto=".order__form" href="#" class="footer__link"
+                    >Контакты</a
+                  >
                 </li>
               </ul>
             </nav>

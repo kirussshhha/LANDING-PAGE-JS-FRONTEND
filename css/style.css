@@ -2,6 +2,10 @@ body {
   font-family: "Montserrat", system-ui;
 }
 
+body._lock {
+  overflow: hidden;
+}
+
 .wrapper {
   overflow: hidden;
   display: flex;
@@ -50,13 +54,17 @@ body {
   color: #333333;
 }
 
-.header__phone {
+.phone__num {
   font-size: 24px;
   font-weight: 600;
   line-height: 29px;
   text-decoration: underline;
+  color: #333333;
 }
 
+.menu__item:nth-child(1),
+.arrow-menu,
+.header__phone-menu,
 .header__burger {
   display: none;
 }
@@ -878,7 +886,79 @@ body {
     padding-top: 21px;
   }
 
-  .header__menu,
+  .header__menu {
+    position: fixed;
+    height: 1024px;
+    width: 300px;
+    border-top-left-radius: 32px;
+    border-bottom-left-radius: 32px;
+    top: 0;
+    right: 0;
+    transform: translate(200%, 0px);
+    transition: 0.3s ease;
+    z-index: 2;
+    background-color: #ffffff;
+  }
+
+  .arrow-menu {
+    display: block;
+    text-align: right;
+    padding-top: 27px;
+    padding-right: 46px;
+  }
+
+  .header__menu._active {
+    transform: translate(0px, 0px);
+  }
+
+  .menu__list {
+    padding-top: 100px;
+    padding-bottom: 56px;
+    display: block;
+  }
+
+  .menu__item {
+    padding-left: 38px;
+    padding-bottom: 40px;
+  }
+
+  .menu__item:nth-child(1) {
+    display: block;
+    background-color: #000000;
+    width: 296px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+
+  .menu__item:nth-child(1) .menu__link {
+    color: #f2f2f2;
+  }
+
+  .menu__link {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .header__phone-menu {
+    display: block;
+    text-align: center;
+  }
+
+  .phone__num {
+    font-size: 24px;
+    line-height: 29px;
+    text-decoration: none;
+    padding-bottom: 8px;
+  }
+
+  .phone-menu-underline {
+    width: 165px;
+    border: 1px solid #333333;
+    margin: 0 auto;
+    border-radius: 1px;
+  }
+
   .header__phone {
     display: none;
   }
@@ -1390,6 +1470,49 @@ body {
 
   .header__logo {
     font-size: 18px;
+    z-index: 3;
+  }
+
+  .arrow-menu {
+    padding-top: 27px;
+    padding-right: 15px;
+  }
+
+  .arrow-menu-img {
+    width: 10px;
+    height: 20px;
+  }
+
+  .header__menu {
+    width: 100%;
+    height: 600px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    text-align: left;
+  }
+
+  .menu__list {
+    padding-top: 69px;
+    padding-bottom: 48px;
+  }
+
+  .menu__item:nth-child(1) {
+    width: 100%;
+  }
+
+  .menu__item {
+    padding-left: 44px;
+    padding-bottom: 20px;
+  }
+
+  .phone__num {
+    font-size: 18px;
+    line-height: 21px;
+    padding-bottom: 6px;
+  }
+
+  .phone-menu-underline {
+    width: 116px;
   }
 
   .burger {
