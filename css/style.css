@@ -327,9 +327,13 @@ body._lock {
   display: none;
 }
 
+.autopark {
+  height: 800px;
+}
+
 .autopark__container {
   padding-top: 102px;
-  padding-bottom: 20px;
+  margin-bottom: 40px;
   width: 1221px;
   margin: 0 auto;
   text-align: center;
@@ -370,13 +374,23 @@ body._lock {
   border: 1px solid #ebebeb;
 }
 
-.type-btn:nth-child(1) {
+.type-btn._active {
   border: 1px solid #fed100;
 }
 
 .slider__container {
   display: flex;
+}
+
+.sliders {
+  margin: 0 auto;
+}
+
+.slide {
+  width: 1000px;
+  display: flex;
   justify-content: space-between;
+  margin: 0 auto;
 }
 
 .arrow-slider {
@@ -411,6 +425,7 @@ body._lock {
 }
 
 .feature {
+  white-space: nowrap;
   padding-left: 16px;
   text-align: left;
   width: 230px;
@@ -1149,6 +1164,10 @@ body._lock {
     margin: 0 auto;
   }
 
+  .autopark {
+    height: 1000px;
+  }
+
   .autopark__container {
     width: 550px;
   }
@@ -1168,7 +1187,7 @@ body._lock {
   }
 
   .type-btn {
-    width: 95px;
+    width: auto;
     height: 30px;
     font-size: 24px;
     line-height: 29px;
@@ -1176,13 +1195,14 @@ body._lock {
     border: none;
   }
 
-  .type-btn:nth-child(1) {
+  .type-btn._active {
     font-weight: 500;
     border: none;
-    border-bottom: 1px solid #fed100;
+    border-bottom: 2px solid #fed100;
   }
 
-  .slider__container {
+  .slide {
+    width: 550px;
     flex-direction: column;
   }
 
@@ -1197,13 +1217,17 @@ body._lock {
     order: 1;
   }
 
+  .main-img {
+    width: 518px;
+  }
+
   .features__block {
     padding: 0px;
     margin: 0 auto;
   }
 
   .feature-tablet {
-    width: 264px;
+    white-space: nowrap;
     padding-bottom: 24px;
     font-size: 20px;
     font-weight: 400;
@@ -1677,6 +1701,10 @@ body._lock {
     width: 78px;
   }
 
+  .autopark {
+    height: 650px;
+  }
+
   .autopark__container {
     padding-top: 30px;
     width: 320px;
@@ -1699,14 +1727,23 @@ body._lock {
   }
 
   .type-btn {
-    width: 55px;
+    width: auto;
     height: 18px;
     font-size: 14px;
   }
 
+  .slide {
+    width: 300px;
+  }
+
   .slider-main-img {
+    padding-left: 0px;
     padding-top: 0px;
     padding-bottom: 4px;
+  }
+
+  .main-img {
+    width: 312px;
   }
 
   .feature-tablet {

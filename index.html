@@ -292,90 +292,228 @@
             </p>
 
             <div class="car-type-btn">
-              <a href="#" class="type-btn">Газели</a>
-              <a href="#" class="type-btn">Каблуки</a>
-              <a href="#" class="type-btn">Грузовики</a>
+              <div id="gazel-btn" class="type-btn">Газели</div>
+              <div id="kabluk-btn" class="type-btn">Каблуки</div>
+              <div id="truk-btn" class="type-btn">Грузовики</div>
             </div>
 
-            <div class="slider__container">
-              <div class="arrow-slider">
-                <img
-                  src="img/autopark/icon/arrow-left.svg"
-                  alt="Стрелка влево"
-                />
-              </div>
-
-              <div class="features__block">
-                <h3 class="feature__title">Газель 3 метра</h3>
-
-                <div class="features__text">
-                  <div class="feature__content">
-                    <img src="img/autopark/icon/checkIcon.svg" alt="Чек" />
-                    <p class="feature">Ширина 2 м</p>
-                  </div>
-
-                  <div class="feature__content">
-                    <img src="img/autopark/icon/checkIcon.svg" alt="Чек" />
-                    <p class="feature">Высота 2 м</p>
-                  </div>
-
-                  <div class="feature__content">
-                    <img src="img/autopark/icon/checkIcon.svg" alt="Чек" />
-                    <p class="feature">Объем 16 м³</p>
-                  </div>
-
-                  <div class="feature__content">
-                    <img src="img/autopark/icon/checkIcon.svg" alt="Чек" />
-                    <p class="feature">Грузоподъемность 1,5 т</p>
-                  </div>
-                </div>
-
-                <div class="feature-content-tablet">
-                  <h3 class="feature-tablet">Газель 3 метра / 1,5 тонны</h3>
-
-                  <div class="slider-dots">
-                    <picture>
-                      <source
-                        srcset="img/autopark/icon/slider-dots-tablet.svg"
-                        media="(max-width: 1024px)"
-                      />
-                      <source
-                        srcset="img/autopark/icon/slider-dots-phone.svg"
-                        media="(max-width: 767px)"
-                      />
-                      <img src="" alt="" />
-                    </picture>
-                  </div>
-                </div>
-
-                <div class="card-btn-container">
-                  <a href="#" class="card-btn-order">Заказать</a>
-                </div>
-              </div>
-
-              <div class="slider-main-img">
-                <picture>
-                  <source
-                    srcset="img/autopark/cars/gazel-desktop.png"
-                    media="(min-width: 1024px)"
-                  />
-                  <source
-                    srcset="img/autopark/cars/gazel-tablet.png"
-                    media="(min-width: 768px)"
-                  />
+            <div class="slider__track">
+              <div class="slider__container">
+                <div class="arrow-slider">
                   <img
-                    class="slider-main-img-phone"
-                    src="img/autopark/cars/gazel-phone.png"
-                    alt="Машина газель телефон"
+                    class="arrow-slider-left"
+                    src="img/autopark/icon/arrow-left.svg"
+                    alt="Стрелка влево"
                   />
-                </picture>
-              </div>
+                </div>
 
-              <div class="arrow-slider">
-                <img
-                  src="img/autopark/icon/arrow-right.svg"
-                  alt="Стрелка вправо"
-                />
+                <div class="sliders">
+                  <div class="slide">
+                    <div class="features__block">
+                      <h3 class="feature__title">Газель 3 метра</h3>
+
+                      <div class="features__text">
+                        <div class="feature__content">
+                          <img
+                            src="img/autopark/icon/checkIcon.svg"
+                            alt="Чек"
+                          />
+                          <p class="feature">Ширина 2 м</p>
+                        </div>
+
+                        <div class="feature__content">
+                          <img
+                            src="img/autopark/icon/checkIcon.svg"
+                            alt="Чек"
+                          />
+                          <p class="feature">Высота 2 м</p>
+                        </div>
+
+                        <div class="feature__content">
+                          <img
+                            src="img/autopark/icon/checkIcon.svg"
+                            alt="Чек"
+                          />
+                          <p class="feature">Объем 16 м³</p>
+                        </div>
+
+                        <div class="feature__content">
+                          <img
+                            src="img/autopark/icon/checkIcon.svg"
+                            alt="Чек"
+                          />
+                          <p class="feature">Грузоподъемность 1,5 т</p>
+                        </div>
+                      </div>
+
+                      <div class="feature-content-tablet">
+                        <h3 class="feature-tablet">
+                          Газель 3 метра / 1,5 тонны
+                        </h3>
+
+                        <div class="slider-dots">
+                          <img
+                            class="dots-img"
+                            src="img/autopark/icon/slider-dots.svg"
+                            alt="Слайдер"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="card-btn-container">
+                        <a href="#" class="card-btn-order">Заказать</a>
+                      </div>
+                    </div>
+
+                    <div class="slider-main-img">
+                      <img
+                        class="main-img"
+                        src="/img/autopark/cars/gazel.png"
+                        alt="Машинка"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="slide">
+                    <div class="features__block">
+                      <h3 class="feature__title">Каблук 2 метра</h3>
+
+                      <div class="features__text">
+                        <div class="feature__content">
+                          <img
+                            src="img/autopark/icon/checkIcon.svg"
+                            alt="Чек"
+                          />
+                          <p class="feature">Ширина 1.8 м</p>
+                        </div>
+
+                        <div class="feature__content">
+                          <img
+                            src="img/autopark/icon/checkIcon.svg"
+                            alt="Чек"
+                          />
+                          <p class="feature">Высота 1.2 м</p>
+                        </div>
+
+                        <div class="feature__content">
+                          <img
+                            src="img/autopark/icon/checkIcon.svg"
+                            alt="Чек"
+                          />
+                          <p class="feature">Объем 8 м³</p>
+                        </div>
+
+                        <div class="feature__content">
+                          <img
+                            src="img/autopark/icon/checkIcon.svg"
+                            alt="Чек"
+                          />
+                          <p class="feature">Грузоподъемность 0,8 т</p>
+                        </div>
+                      </div>
+
+                      <div class="feature-content-tablet">
+                        <h3 class="feature-tablet">
+                          Каблук 2 метра / 0,8 тонны
+                        </h3>
+
+                        <div class="slider-dots">
+                          <img
+                            class="dots-img"
+                            src="img/autopark/icon/slider-dots.svg"
+                            alt="Слайдер"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="card-btn-container">
+                        <a href="#" class="card-btn-order">Заказать</a>
+                      </div>
+                    </div>
+
+                    <div class="slider-main-img">
+                      <img
+                        class="main-img"
+                        src="/img/autopark/cars/lada.png"
+                        alt="Машинка"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="slide">
+                    <div class="features__block">
+                      <h3 class="feature__title">Грузовик 3 метра</h3>
+
+                      <div class="features__text">
+                        <div class="feature__content">
+                          <img
+                            src="img/autopark/icon/checkIcon.svg"
+                            alt="Чек"
+                          />
+                          <p class="feature">Ширина 3 м</p>
+                        </div>
+
+                        <div class="feature__content">
+                          <img
+                            src="img/autopark/icon/checkIcon.svg"
+                            alt="Чек"
+                          />
+                          <p class="feature">Высота 3 м</p>
+                        </div>
+
+                        <div class="feature__content">
+                          <img
+                            src="img/autopark/icon/checkIcon.svg"
+                            alt="Чек"
+                          />
+                          <p class="feature">Объем 20 м³</p>
+                        </div>
+
+                        <div class="feature__content">
+                          <img
+                            src="img/autopark/icon/checkIcon.svg"
+                            alt="Чек"
+                          />
+                          <p class="feature">Грузоподъемность 2 т</p>
+                        </div>
+                      </div>
+
+                      <div class="feature-content-tablet">
+                        <h3 class="feature-tablet">
+                          Грузовик 3 метра / 2 тонны
+                        </h3>
+
+                        <div class="slider-dots">
+                          <img
+                            class="dots-img"
+                            src="img/autopark/icon/slider-dots.svg"
+                            alt="Слайдер"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="card-btn-container">
+                        <a href="#" class="card-btn-order">Заказать</a>
+                      </div>
+                    </div>
+
+                    <div class="slider-main-img">
+                      <img
+                        class="main-img"
+                        src="/img/autopark/cars/truck.png"
+                        alt="Машинка"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="arrow-slider">
+                  <img
+                    class="arrow-slider-right"
+                    src="img/autopark/icon/arrow-right.svg"
+                    alt="Стрелка вправо"
+                  />
+                </div>
               </div>
             </div>
           </div>
