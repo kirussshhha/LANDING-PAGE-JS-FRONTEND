@@ -1,3 +1,54 @@
+function init() {
+  let map = new ymaps.Map("yamap", {
+    center: [52.09118657200926, 23.699272999999952],
+    zoom: 15,
+  });
+
+  let placemark = new ymaps.Placemark(
+    [52.09118657200926, 23.699272999999952],
+    {
+      balloonContentHeader: "Наш адрес",
+      balloonContentBody: "ул. Буденного 64, Брест",
+    },
+    {
+      preset: "islands#redIcon",
+    }
+  );
+
+  map.geoObjects.add(placemark);
+}
+
+ymaps.ready(init);
+
+function selectCityByRegion() {
+  const citiesByRegion = {
+    minsk: ["Минск", "Борисов", "Слуцк", "Солигорск"],
+    gomel: ["Гомель", "Мозырь", "Жлобин", "Речица"],
+    brest: ["Брест", "Барановичи", "Пинск", "Кобрин"],
+    vitebsk: ["Витебск", "Орша", "Новополоцк", "Полоцк"],
+    mogilev: ["Могилев", "Бобруйск", "Осиповичи"],
+    grodno: ["Гродно", "Лида", "Волковыск", "Слоним"],
+  };
+
+  const regionSelect = document.getElementById("region");
+  const citySelect = document.getElementById("city");
+
+  const selectedRegion = regionSelect.value;
+
+  citySelect.textContent = "";
+
+  if (selectedRegion) {
+    const cities = citiesByRegion[selectedRegion];
+
+    cities.forEach((city) => {
+      const option = document.createElement("option");
+      option.value = city.toLowerCase();
+      option.textContent = city;
+      citySelect.appendChild(option);
+    });
+  }
+}
+
 document
   .getElementById("additional-serv-title")
   .addEventListener("click", function () {
@@ -183,6 +234,6 @@ trukBtn.addEventListener("click", () => {
   showSlide(2);
 
   removeActive();
-  
+
   trukBtn.classList.add("_active");
 });
