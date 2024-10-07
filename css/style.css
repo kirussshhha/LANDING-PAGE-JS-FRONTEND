@@ -142,6 +142,11 @@ body._lock {
   pointer-events: none;
 }
 
+.banner-btn__container:hover .border__btn {
+  transition: 0.2s;
+  background-color: #f2f2f2;
+}
+
 .banner__btn {
   position: relative;
   display: inline-block;
@@ -156,6 +161,11 @@ body._lock {
   color: #f2f2f2;
   background-color: #ff352b;
   z-index: 2;
+}
+
+.banner__btn:hover{
+  transition: 0.2s;
+  background-color: #FF772B;
 }
 
 .banner__advantages {
@@ -278,6 +288,12 @@ body._lock {
   display: flex;
   justify-content: center;
   border: 1px solid #ebebeb;
+  cursor: pointer;
+}
+
+.card:hover{
+  transition: 0.2s;
+  box-shadow: 0px 5px 30px 1px rgba(34, 60, 80, 0.2);
 }
 
 .card__title {
@@ -311,7 +327,7 @@ body._lock {
 }
 
 .card-btn-order {
-  padding-top: 14px;
+  padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 77px;
   padding-right: 79px;
@@ -321,6 +337,12 @@ body._lock {
   font-weight: 500;
   color: #333333;
   background-color: #fed100;
+}
+
+.card-btn-order:hover{
+  transition: 0.2s;
+  color: #f2f2f2;
+  box-shadow: 0px 4px 24px 0px #FED100;
 }
 
 .card-btn-all-prices {
@@ -518,6 +540,14 @@ body._lock {
   font-weight: 500;
   color: #333333;
   border: 1px solid #333333;
+}
+
+.all-review-btn:hover{
+  transition: 0.2s;
+  font-weight: 700;
+  border: none;
+  background-color: #ffffff;
+  color: #333333;
 }
 
 .read__full,
