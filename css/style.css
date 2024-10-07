@@ -248,6 +248,14 @@ body._lock {
   display: flex;
 }
 
+.step-num{
+  font-weight: 300;
+  font-size: 50px;
+  color: #333333;
+  position: relative;
+  text-shadow: 2px 0px 0px #FED100;
+}
+
 .prices__container {
   padding-top: 102px;
   width: 1305px;
@@ -1093,11 +1101,10 @@ body._lock {
     gap: 24px;
   }
 
-  .step-img {
-    width: 112px;
-    height: 106px;
+  .step-num{
+    font-size: 90px;
   }
-
+  
   .step__title {
     width: 460px;
     padding-top: 12px;
@@ -1639,9 +1646,9 @@ body._lock {
     align-items: center;
   }
 
-  .step-img {
+  .step-num{
     width: 66px;
-    height: 54px;
+    font-size: 50px;
   }
 
   .step__title {
