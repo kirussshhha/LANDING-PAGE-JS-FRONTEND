@@ -685,7 +685,7 @@ body._lock {
   height: 1.25rem;
   border-radius: 100%;
   border: 0.125rem solid #fed100;
-  background: url("/img/feedback-form/icons/radio-btn-selected.svg") 0 0
+  background: url("../img/feedback-form/icons/radio-btn-selected.svg") 0 0
     no-repeat;
   background-position: center;
 }
@@ -740,7 +740,7 @@ body._lock {
   height: 1.25rem;
   border: 0.125rem solid var(--main-back-color);
   border-radius: 2px;
-  background: url("/img/feedback-form/icons/checked.svg") 0 0 no-repeat;
+  background: url("../img/feedback-form/icons/checked.svg") 0 0 no-repeat;
   background-position: center;
 }
 
@@ -834,7 +834,7 @@ body._lock {
   width: 1rem;
   height: 1rem;
   border: none;
-  background: url("/img/feedback-form/icons/personal-data-checked.svg") 0 0
+  background: url("../img/feedback-form/icons/personal-data-checked.svg") 0 0
     no-repeat;
 }
 
